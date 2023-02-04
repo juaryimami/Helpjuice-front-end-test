@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.tab_holder {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  flex-direction: row;
+  border-radius: 7px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(179, 176, 176);
+}
+
+.right-group {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.p_tag {
+  display: inline-block;
+  background-color: aqua;
+  padding-top: 5px;
+  width: 30px;
+  height: 35px;
+  align-items: center;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.p-text {
+  margin: 5px;
+  display: block;
+  background-color: aqua;
+  text-align: center;
+}
+
+.right_controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 18px;
+  align-items: center;
+}
+
+.timer_class {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid grey;
+}
+
+.hope {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid grey;
+}
+
+.pinned_tag {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid grey;
+  align-items: center;
+}
+
+.left-group {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.fz-24 {
+  font-size: 18px;
+}
+
+.inline-block {
+  width: 16px;
+  height: 16px;
+}
+
+.title {
+  width: 100%;
+  border-bottom: 1px solid rgb(179, 176, 176);
+}
+
+.text-field {
+  width: 20%;
+  display: flex;
+  margin-top: 100px;
+  border: none;
+}
