@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do list Project
+# Front End Test project From Helpjuice
 
 In this project, I set up my dynamic form web page. My goal was add the functionality to add and remove each slot from their group and also removing the group one by one. 
 
@@ -16,7 +16,7 @@ GitHub: [@JUPAC](https://juaryimami.github.io/kf-exam/dist/)
 
 To get a local copy up and running follow these simple steps:
 
-1. Go to the [repository page]( https://juaryimami.github.io/kf-exam/).
+1. Go to the [repository page]( https://juaryimami.github.io/Helpjuice-front-end-test/).
 2. Press the "Code" button and copy the link.
 3. Clone it using git command `git clone <link>`.
 
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple steps:
    - A web browser to view the output.
 
 ## Setup
-   - To clone my repository run this command `https://github.com/juaryimami/kf-exam.git`  
+   - To clone my repository run this command `https://github.com/juaryimami/Helpjuice-front-end-test.git`  
 
 ## Run tests
    For tracking linters errors and also to run web pack manually locally you need to follow these steps:
@@ -74,11 +74,11 @@ To get a local copy up and running follow these simple steps:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/juaryimami/kf-exam/issues).
+Feel free to check the [issues page](https://github.com/juaryimami/Helpjuice-front-end-test/issues).
 
 ## :grey_exclamation: Acknowledgments
 
-- [Microverse](https://www.microverse.org/)
+- [HelpJuice](https://www.microverse.org/)
 
 ## 📝 License
 

@@ -1,142 +1,77 @@
 import { createElement, getElement } from './tools.js';
-import { groupCounter, slotCounter } from './itemCounter.js';
 
-const groupContainer = getElement('.group-container');
-
-const fragment = document.createDocumentFragment();
-const groupFragment = document.createDocumentFragment();
+const groupContainer = getElement('.text-div');
 
 const createSlotStructure = (event) => {
-  const taskContainer = createElement('li');
-  taskContainer.setAttribute('draggable', 'true');
-  taskContainer.classList.add('slot-content');
+  const popUpContainer = createElement('div');
 
-  const slotItems = createElement('div');
-  slotItems.classList.add('items-2');
-  const nameDiv = createElement('div');
-  nameDiv.classList.add('slot-name');
-  const removeSlot = createElement('div');
-  removeSlot.classList.add('rm-btn2');
+  const title = createElement('div');
+  popUpContainer.classList.add('popupcontainer');
+  title.classList.add('title-header');
+  const addBlocks = createElement('h2');
+  addBlocks.classList.add('addBlocks');
+  addBlocks.textContent = 'Add blocks';
+  const clue = createElement('h3');
+  clue.classList.add('clue');
+  clue.textContent = 'Keep typing to filter, or escape to exit';
+  const filterHeader = createElement('h3');
+  filterHeader.textContent = 'Filtering Keyword';
+  filterHeader.classList.add('headerfilter');
+  title.appendChild(addBlocks);
+  title.appendChild(clue);
+  title.appendChild(filterHeader);
 
-  const slotTitle = createElement('h3');
-  slotTitle.classList.add('slot-title');
-  const removeButton = createElement('button');
-  removeButton.classList.add('remove-btn2');
-  const gName = event.target.dataset.id;
+  const headerContaineer = createElement('div');
+  headerContaineer.classList.add('header-container');
+  const header1 = createElement('div');
+  header1.classList.add('header1');
+  const textIcon = createElement('img');
+  textIcon.src = '/src/utilities/icons8-type-16.png';
+  textIcon.classList.add('T-icons1');
+  const headerTextArea1 = createElement('div');
+  headerTextArea1.classList.add('text-area1');
+  const header1text1 = createElement('h3');
+  header1text1.classList.add('header-text11');
+  header1text1.textContent = 'Heading 1';
+  const header1text2 = createElement('h3');
+  header1text2.classList.add('header-text21');
+  header1text2.textContent = 'Shortcut type # + space';
+  header1.appendChild(textIcon);
+  headerTextArea1.appendChild(header1text1);
+  headerTextArea1.appendChild(header1text2);
+  header1.appendChild(headerTextArea1);
 
-  slotTitle.textContent = `${gName}slot${slotCounter(event) + 1}`;
-  removeButton.textContent = '-';
+  const header2 = createElement('div');
+  header2.classList.add('header2');
+  const textIcon2 = createElement('img');
+  textIcon2.classList.add('T-icons2');
+  textIcon2.src = '/public/icons8-type-16.png';
+  const headerTextArea2 = createElement('div');
+  headerTextArea2.classList.add('text-area2');
+  const header2text1 = createElement('h3');
+  header2text1.classList.add('header-text21');
+  header2text1.textContent = 'Expandable Heading 1';
+  const header2text2 = createElement('h3');
+  header2text2.classList.add('header-text22');
+  header2text2.textContent = 'Shortcut type # + space';
 
-  nameDiv.appendChild(slotTitle);
-  removeSlot.appendChild(removeButton);
-  slotItems.appendChild(nameDiv);
-  slotItems.appendChild(removeSlot);
+  header2.appendChild(textIcon2);
+  headerTextArea2.appendChild(header2text1);
+  headerTextArea2.appendChild(header2text2);
+  header2.appendChild(headerTextArea2);
 
-  taskContainer.appendChild(slotItems);
+  headerContaineer.appendChild(header1);
+  headerContaineer.appendChild(header2);
 
-  fragment.appendChild(taskContainer);
+  popUpContainer.appendChild(title);
+  popUpContainer.appendChild(headerContaineer);
+
+  groupContainer.insertAdjacentElement('beforeend', popUpContainer);
+  const targetArea = event.currentTarget;
+  targetArea.textContent = '/1';
 };
 
-const createGroupStructure = () => {
-  const gphead = createElement('div');
-  gphead.classList.add('header');
-  const groupHeader = createElement('div');
-  groupHeader.classList.add('group-header');
-  const hashtag = createElement('div');
-  hashtag.classList.add('hashtag');
-  hashtag.textContent = '#';
-  const groupSection = createElement('div');
-  groupSection.classList.add('group-section');
-  groupSection.textContent = 'Group';
-  const slotSection = createElement('div');
-  slotSection.classList.add('slot-section');
-  slotSection.textContent = 'Slot';
-
-  groupHeader.appendChild(hashtag);
-  groupHeader.appendChild(groupSection);
-  groupHeader.appendChild(slotSection);
-
-  const groupItems = createElement('div');
-  groupItems.classList.add('group-items');
-  const groupItem1 = createElement('div');
-  groupItem1.classList.add('items1');
-  const rmbtn1 = createElement('div');
-  rmbtn1.classList.add('rm-btn1');
-  const removeGroup = createElement('button');
-  removeGroup.classList.add('remove-btn1');
-  removeGroup.textContent = '-';
-  const groupName = createElement('div');
-  groupName.classList.add('group-name');
-  const groupTitle = createElement('h3');
-  groupTitle.classList.add('group-title');
-  groupTitle.textContent = `group${groupCounter() + 1}`;
-
-  const slotItems = createElement('div');
-  slotItems.classList.add('slot-items');
-  const slotItem = createElement('ul');
-  slotItem.classList.add('slot-item');
-  const slotContent = createElement('li');
-  slotContent.classList.add('slot-content');
-  const Items = createElement('div');
-  Items.classList.add('items-2');
-  const slotName = createElement('div');
-  slotName.classList.add('slot-name');
-  const slotTitle = createElement('h3');
-  slotTitle.classList.add('slot-title');
-  slotTitle.textContent = `g${groupCounter() + 1}_slot1`;
-  const rmvBtn2 = createElement('div');
-  rmvBtn2.classList.add('rm-btn2');
-  const btn = createElement('button');
-  btn.classList.add('remove-btn2');
-  btn.textContent = '-';
-  const addSlot = createElement('div');
-  addSlot.classList.add('add-slot');
-  const addSlotButton = createElement('button');
-  addSlotButton.classList.add('add-slot-btn');
-  addSlotButton.textContent = '+ Add Slot';
-  addSlotButton.dataset.id = `g${groupCounter() + 1}_`;
-
-  addSlot.appendChild(addSlotButton);
-  slotName.appendChild(slotTitle);
-  rmvBtn2.appendChild(btn);
-  Items.appendChild(slotName);
-  Items.appendChild(rmvBtn2);
-  slotContent.appendChild(Items);
-  slotItem.appendChild(slotContent);
-  slotItems.appendChild(slotItem);
-  slotItems.appendChild(addSlot);
-
-  rmbtn1.appendChild(removeGroup);
-  groupName.appendChild(groupTitle);
-  groupItem1.appendChild(rmbtn1);
-  groupItem1.appendChild(groupName);
-  groupItems.appendChild(groupItem1);
-
-  const groupContent = createElement('div');
-  groupContent.classList.add('group-content');
-
-  groupContent.appendChild(groupItems);
-  groupContent.appendChild(slotItems);
-
-  gphead.appendChild(groupHeader);
-  gphead.appendChild(groupContent);
-
-  groupFragment.appendChild(gphead);
-};
-
-export const renderGroup = () => {
-  createGroupStructure();
-  groupContainer.appendChild(groupFragment);
-};
+// eslint-disable-next-line import/prefer-default-export
 export const renderTaskDom = (event) => {
-  const parentElement = event.target.parentNode;
-  const slotContainer = parentElement.parentNode.firstElementChild;
   createSlotStructure(event);
-  slotContainer.appendChild(fragment);
-};
-
-export const refreshIndex = (listTasks) => {
-  listTasks.forEach((task, index) => {
-    task.index = index;
-  });
 };
