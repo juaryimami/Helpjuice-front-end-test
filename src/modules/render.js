@@ -2,6 +2,7 @@ import { createElement, getElement } from './tools.js';
 
 const groupContainer = getElement('.text-div');
 
+// method to create the popup
 const createSlotStructure = (event) => {
   const popUpContainer = createElement('div');
 
@@ -26,7 +27,7 @@ const createSlotStructure = (event) => {
   const header1 = createElement('div');
   header1.classList.add('header1');
   const textIcon = createElement('img');
-  textIcon.src = '/src/utilities/icons8-type-16.png';
+  textIcon.src = 'https://www.svgrepo.com/show/54186/letter-t.svg';
   textIcon.classList.add('T-icons1');
   const headerTextArea1 = createElement('div');
   headerTextArea1.classList.add('text-area1');
@@ -45,11 +46,11 @@ const createSlotStructure = (event) => {
   header2.classList.add('header2');
   const textIcon2 = createElement('img');
   textIcon2.classList.add('T-icons2');
-  textIcon2.src = '/public/icons8-type-16.png';
+  textIcon2.src = 'https://www.svgrepo.com/show/54186/letter-t.svg';
   const headerTextArea2 = createElement('div');
   headerTextArea2.classList.add('text-area2');
   const header2text1 = createElement('h3');
-  header2text1.classList.add('header-text21');
+  header2text1.classList.add('header-text12');
   header2text1.textContent = 'Expandable Heading 1';
   const header2text2 = createElement('h3');
   header2text2.classList.add('header-text22');

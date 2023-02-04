@@ -7,9 +7,10 @@ import { getElement } from './modules/tools.js';
 
 const groupContainer = getElement('.text-field');
 
-let isSelected = 0;
+let isSelected = 0; // variables for determining the headers
 let headings = 0;
 
+// creating an event listner method for all the events in the pop up
 document.addEventListener('click', (event) => {
   if (event.target && event.target.className === 'text-field') {
     if (isSelected === 0) {
@@ -50,6 +51,7 @@ document.addEventListener('click', (event) => {
   }
 }, false);
 
+// methods to display the text content after we hit enter
 groupContainer.addEventListener('keyup', (event) => {
   event.preventDefault();
   if (headings === 1 && event.keyCode === 13) {
