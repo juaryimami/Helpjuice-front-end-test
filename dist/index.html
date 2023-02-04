@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To Do List Web Page where you can save your activities to do in your day or week." />
+    <meta name="keywords" content="JuharYimer, To do list, project, Microverse" />
+    <meta name="author" content="Juhar Yimer"/>
+
+    <title>Group-slot list website | JuharYimer</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <div class="hero">
+        <nav class="tab_holder">
+            <div class="right-group">
+                <div class="p_tag">
+                    <label class="p-text" for="p">P</label>
+               </div>
+               <div class="right_controls">
+                <div class="timer_class">
+                    <svg class="inline-block"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>                    
+                      <label class="fz-24" for="minute">0min</label>
+                </div>
+                <div class="hope">
+                  <svg class="inline-block" id="Gradient_Line" data-name="Gradient Line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="10.3915" y1="31.97839" x2="53.60919" y2="31.97839" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffa68d"/><stop offset="1" stop-color="#fd3a84"/></linearGradient></defs><title>1</title><path class="cls-1" d="M10.96484,38.9541a11.41385,11.41385,0,0,0,11.628,14.86606,10.27876,10.27876,0,0,0,18.81442,0A11.41362,11.41362,0,0,0,53.035,38.953a11.048,11.048,0,0,0-6.83675-6.99041,14.29362,14.29362,0,0,0-2.44984-9.88245,8.15359,8.15359,0,0,0,5.71937-7.81744V5a.99942.99942,0,0,0-1-1H46.40918a7.18353,7.18353,0,0,0-7.17578,7.17578v6.69605a14.38409,14.38409,0,0,0-14.4668-.08942V11.17578A7.18353,7.18353,0,0,0,17.59082,4H15.53223a.99942.99942,0,0,0-1,1v9.2627a8.18305,8.18305,0,0,0,5.60205,7.77124,14.31427,14.31427,0,0,0-2.4718,9.97125A11.05952,11.05952,0,0,0,10.96484,38.9541ZM41.2334,11.17578c.02309-3.3988,2.97954-5.53176,6.2344-5.17566l0,8.26258a6.16176,6.16176,0,0,1-5.09472,6.10253,13.77687,13.77687,0,0,0-1.13965-1.08007ZM16.53223,14.2627V6c3.25545-.355,6.211,1.77586,6.23435,5.17587l0,7.98917a15.15392,15.15392,0,0,0-1.25781,1.17187A6.18343,6.18343,0,0,1,16.53223,14.2627Zm5.2373,18.97753c.01976-.49642-.02185-1.50482-.06642-2-1.25106-.12772-2.41464.88288-2.15508-.99319C19.404,20.04162,31.70836,14.10137,39.61245,20.5423a12.37687,12.37687,0,0,1,4.69516,9.70477c.23591,1.84143-.829.86487-2.07727.99318a.97392.97392,0,0,0-.9696.997,1.02522,1.02522,0,0,0,1.02246,1.00293A9.29,9.29,0,1,1,42.29,51.82031a14.99166,14.99166,0,0,0-1.76838.04208.98013.98013,0,0,0-.71886.59946c-2.79856,7.59052-13.16634,7.19743-15.81012-.326-.40948-.49221-1.73449-.27052-2.28273-.31558C9.51531,51.41043,9.22925,33.66373,21.76953,33.24023Zm6.11328,15.43848a5.03442,5.03442,0,0,0,4.117-2.10736,5.12372,5.12372,0,0,0,9.23352-3.01,1.00015,1.00015,0,0,0-1.99994.00022,3.11275,3.11275,0,0,1-6.18616.46647l1.87952-2.93235a3.07505,3.07505,0,0,0-2.5743-4.70991,3.12722,3.12722,0,0,0-3.27921,4.71L30.954,44.03a3.10991,3.10991,0,0,1-6.18732-.46861,1,1,0,0,0-2.00006.0001A5.12258,5.12258,0,0,0,27.88281,48.67871Zm2.874-8.66308a1.05823,1.05823,0,0,1,.89062-1.62989h.70508a1.05823,1.05823,0,0,1,.89062,1.62989L32,41.95508Zm-3.90332-8.834a3.05879,3.05879,0,0,0-.0001-6.11719A3.05879,3.05879,0,0,0,26.85352,31.18164Zm0-4.11719a1.05871,1.05871,0,0,1,0,2.11719A1.05871,1.05871,0,0,1,26.85352,27.06445Zm10.293,4.11719a3.05879,3.05879,0,0,0-.00009-6.11719A3.05879,3.05879,0,0,0,37.14648,31.18164Zm0-4.11719a1.05871,1.05871,0,0,1,0,2.11719A1.05871,1.05871,0,0,1,37.14648,27.06445Z"/></svg>
+
+                </div>
+                <div class="pinned_tag">
+                    <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 4.5l-15 15m0 0h11.25m-11.25 0V8.25" />
+                      </svg>
+                    <label class="fz-24" for="pin">0</label>
+                </div>
+            </div>
+            </div>
+            <div class="left-group">
+                <svg class="inline-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 100.353 100.353" style="enable-background:new 0 0 100.353 100.353;" xml:space="preserve">
+           <g>
+               <path style="fill:#231F20;" d="M96.747,39.242c-0.186-0.782-0.97-1.265-1.755-1.079c-0.782,0.187-1.265,0.972-1.078,1.754
+                   c0.766,3.212,1.155,6.604,1.155,10.083c0,24.85-20.67,45.067-46.078,45.067S2.913,74.85,2.913,50
+                   c0-24.852,20.67-45.07,46.078-45.07c10.119,0,19.785,3.202,27.952,9.26c0.644,0.479,1.558,0.344,2.037-0.302
+                   s0.344-1.558-0.302-2.037C70.006,5.417,59.74,2.018,48.991,2.018C21.977,2.018,0,23.542,0,50c0,26.456,21.977,47.98,48.991,47.98
+                   c27.014,0,48.991-21.524,48.991-47.98C97.982,46.295,97.566,42.676,96.747,39.242z"/>
+               <path style="fill:#231F20;" d="M47.98,71.683c-0.386,0-0.756-0.153-1.03-0.426L19.637,43.948c-0.569-0.569-0.569-1.491,0-2.06
+                   c0.568-0.569,1.49-0.569,2.059,0l26.223,26.219l49.538-55.486c0.536-0.6,1.456-0.652,2.056-0.116s0.652,1.456,0.117,2.056
+                   L49.066,71.197c-0.267,0.299-0.645,0.475-1.045,0.486C48.007,71.683,47.994,71.683,47.98,71.683z"/>
+           </g>
+           </svg>
+                    <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+                      </svg>
+                      <svg class="inline-block" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                 <g>
+                     <path d="M16,10c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S14.3,10,16,10z"/>
+                     <path d="M16,13c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3S17.7,13,16,13z"/>
+                     <path d="M16,22c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3S17.7,22,16,22z"/>
+                 </g>
+                 </svg>
+            </div>
+            
+        </nav>
+        <div class="title">
+            <h1 class="title-text">Front-End Developer Test Project</h1>
+        </div>
+        <p >Your goal to make a page that looks exactly this one, and has the ability to cteate H1 text simply
+            by typing / then 1, then typing text and hitting enter.
+        </p>
+        <div class="editor-area">
+
+        </div>
+        <div class="text-div">
+            <input class="text-field" type="text" placeholder="Type / for blocks, @ to link docs or people">
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/27e53b408d.js" crossorigin="anonymous"></script>
+</body>
+</html>
